@@ -83,7 +83,7 @@ if "1" in x:
                 bone = Item()
                 print("Название предмета:",bone.name)
                 sleep(0.5)
-                print("Качество:",bone.condition)
+                print("Состояние:",bone.condition)
                 sleep(0.5)
                 print("Осталось использований:",bone.number_of_uses)
                 sleep(0.5)

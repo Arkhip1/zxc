@@ -17,6 +17,12 @@ class Enemy:
         self.name = "Стая бездомных собак"
         self.count = "5 собак"
         self.average_age = "5 лет"
+        
+class Item:
+    def __init__(self):
+        self.name = "Кость"
+        self.condition = "Плохое"
+        self.number_of_uses = "1 раз"
 
 
 player = Human()
@@ -73,6 +79,13 @@ if "1" in x:
                 print("Вы начали убегать от собак.")
                 sleep(0.5)
                 print("Пока Вы бежали, Вы нашли кость.")
+                sleep(0.5)
+                bone = Item()
+                print("Название предмета:",bone.name)
+                sleep(0.5)
+                print("Качество:",bone.condition)
+                sleep(0.5)
+                print("Осталось использований:",bone.number_of_uses)
                 sleep(0.5)
                 print("""Что Вы с ней будете делать?
 1. Подобрать и кинуть в сторону собак

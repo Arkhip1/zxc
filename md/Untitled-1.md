@@ -7,3 +7,23 @@
 ![Картинка с изображением муравьиного алгоритма](img/image.png)
 
 *На этой картинке показано, как муравьи добираются до пищи, благодоря проложенному муравьём-первопроходцем пути.*
+
+*Этот алгоритм можно реализовать через бибилиотеку* `pygame` *в* **python**
+
+*Вот часть кода, необходимая для запуска окна* `pygame`*:*
+
+```python
+import pygame
+import sys
+
+pygame.init()
+
+screen = pygame.display.set_mode((600,600))
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+        pygame.display.flip()
+```
